@@ -1,6 +1,6 @@
 # steg - .ppm image steganography
 
-This is a program for encoding strings in .ppm images (P3 format only). Each message is hidden using a key specified by the user. To extract the message the same key must be entered.
+This is a program for encoding strings in .ppm images (P3 format only). Each message is hidden using a key specified by the user which must be known if one wishes to extract the message.
 
 Messages are encoded bit-by-bit in the least significant bit of each encoding pixel's colour value. This results in no visible change. The sequence of pixels used to encode the message is determined by the key.
 
