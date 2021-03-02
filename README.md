@@ -10,12 +10,12 @@ Compile the C program using `gcc src/*.c -o steg`.
 
 There are two modes for steg: 'e' for hiding messages in images and 'd' for reading them.
 
-To hide a message use `./steg e <source> <target>` replacing <target> with the name of the file in which you would like to hide your message and replacing <source> with the file of the image that you would like to use. You will be prompted for your key, which must be an integer, followed by the message to be hidden.
+To hide a message use `./steg e <source> <target>` replacing \<target\> with the name of the file in which you would like to hide your message and replacing \<source\> with the file of the image that you would like to use. You will be prompted for your key, which must be an integer, followed by the message to be hidden.
 
-To extract a message use `./steg d <source>` replacing <source> with the name of the file that the message is hidden in. You will be prompted for the key that was used to hide it. If you enter the correct key then the message will be succesfully extracted and displayed.
+To extract a message use `./steg d <source>` replacing \<source\> with the name of the file that the message is hidden in. You will be prompted for the key that was used to hide it. If you enter the correct key then the message will be succesfully extracted and displayed.
 
 ## Usage Example
 
-Download the sample file marvin.ppm at https://jackjmillerpersonal.s3.amazonaws.com/res/marvin.ppm. To hide a message using this image move it into the project directory and use `./steg e marvin.ppm marvin2.ppm`. You will be prompted for a key. Enter 12345 as your key. Now you will be prompted for your message. After entering your message it will be hidden in marvin2.ppm
+Download the sample file marvin.ppm at https://jackjmiller.ams3.digitaloceanspaces.com/assets/marvin.ppm. To hide a message using this image move it into the project directory and use `./steg e marvin.ppm marvin2.ppm`. You will be prompted for a key. Enter 12345 as your key. Now you will be prompted for your message. After entering your message it will be hidden in marvin2.ppm
 
 To read the message hidden in marvin2.ppm use `./steg d marvin2.ppm`. You will be prompted for a key. Enter 12345, the key we used to hide the message, and your message will now be displayed.
